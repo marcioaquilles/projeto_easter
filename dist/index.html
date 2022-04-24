@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
   <link rel="stylesheet" href="css/owl/owl.carousel.min.css" />
   <link rel="stylesheet" href="css/owl/owl.theme.default.min.css" />
   <link rel="stylesheet" href="css/magnific-popup.css" />
@@ -23,6 +23,15 @@
         <a class="navbar-brand" href="#">
           <img src="assets/logo1.svg" class="img-fluid logog" />
         </a>
+        <div class="headerButtons">
+          <a href="#">
+            <button type="button" class="cartQuantity zeroCart">
+              <i class="icon-cart">
+              </i>
+              <p></p>
+            </button>
+          </a>
+        </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -30,7 +39,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" href="#slider">Página Inicial</a>
+              <a class="nav-link active" href="#slider">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#sobre">Sobre</a>
@@ -39,7 +48,7 @@
               <a class="nav-link" href="#sabores">Sabores</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#clientes">Nossos clientes</a>
+              <a class="nav-link" href="#clientes">Clientes</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#servicos">Serviços</a>
@@ -69,7 +78,7 @@
             class="button btn btn-outline-primary button-primary-outline d-md-inline-block d-block">Contato</a>
         </div>
         <div class="col-lg-8 col-md-6 align-self-center text-center">
-          <img src="assets/6832874.webp" class="img-fluid slider" />
+          <img src="assets/6832874.webp" class="img-fluid slider rounded" />
         </div>
       </div>
     </div>
@@ -81,7 +90,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 align-self-center text-center order-md-1 order-2">
-          <img src="assets/pexels-dziana-hasanbekava-6740650.jpg" class="img-fluid sobre-img" />
+          <img src="assets/pexels-dziana-hasanbekava-6740650.jpg" class="img-fluid sobre-img rounded" />
         </div>
         <div class="col-md-6 align-self-center order-md-2 order-1 mb-md-0 mb-4">
           <h2 class="title">
@@ -127,18 +136,28 @@
               sit voluptatem accusantium
             </p>
           </a>
-          <!-- <h4>Quantidade</h4>
-          <ul class="size">
-            <li class="sinal nav-item" id="menos">-</li>
-            <li class="qt">0</li>
-            <li class="sinal" id="mais">+</li>
-          </ul>
-          <div class="group">
-            <h2>
-              <sup>R$</sup><span class="valorR">11</span><span class="valorC">,99</span>
-            </h2>
-            <a id="enviar" data-toggle="modal" data-target="#myModal">Ver pedido</a>
-          </div> -->
+          <!-- Opção de compra -->
+          <div class="quantity">
+            <p>Quantidade:</p>
+            <div class="quantityInput">
+              <button type="button" class="lessButton" id="less" disabled>
+                <i class="icon-less"></i>
+              </button>              
+              <div class="number">1</div>
+              <button type="button" class="moreButton" id="more">
+                <i class="icon-more"></i>
+              </button>
+            </div>            
+          </div>
+          <div class="valor">
+            <p>Valor:</p>
+            <p>R$ 100,00</p>
+          </div>          
+          <div class="containerButton"><button type="button"
+              class="primaryButtonLarge button btn btn-primary button-primary d-md-inline-block d-block mb-md-0 mb-2 mr-md-2">Adicionar
+              no carrinho</button>
+          </div>
+          <!-- Fim opção compra -->
         </div>
         <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
           <a href="#" class="destaque">
@@ -153,6 +172,28 @@
               sit voluptatem accusantium
             </p>
           </a>
+          <!-- Opção de compra -->
+          <div class="quantity">
+            <p>Quantidade:</p>
+            <div class="quantityInput">
+              <button type="button" class="lessButton" disabled>
+                <i class="icon-less"></i>
+              </button>
+              <div class="number">1</div>
+              <button type="button" class="moreButton">
+                <i class="icon-more"></i>
+              </button>
+            </div>
+          </div>
+          <div class="valor">
+            <p>Valor:</p>
+            <p>R$ 100,00</p>
+          </div> 
+          <div class="containerButton"><button type="button"
+              class="primaryButtonLarge button btn btn-primary button-primary d-md-inline-block d-block mb-md-0 mb-2 mr-md-2">Adicionar
+              no carrinho</button>
+          </div>
+          <!-- Fim opção compra -->
         </div>
         <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
           <a href="#" class="destaque">
@@ -167,6 +208,28 @@
               sit voluptatem accusantium
             </p>
           </a>
+          <!-- Opção de compra -->
+          <div class="quantity">
+            <p>Quantidade:</p>
+            <div class="quantityInput">
+              <button type="button" class="lessButton" disabled>
+                <i class="icon-less"></i>
+              </button>
+              <div class="number">1</div>
+              <button type="button" class="moreButton">
+                <i class="icon-more"></i>
+              </button>
+            </div>
+          </div>
+          <div class="valor">
+            <p>Valor:</p>
+            <p>R$ 100,00</p>
+          </div> 
+          <div class="containerButton"><button type="button"
+              class="primaryButtonLarge button btn btn-primary button-primary d-md-inline-block d-block mb-md-0 mb-2 mr-md-2">Adicionar
+              no carrinho</button>
+          </div>
+          <!-- Fim opção compra -->
         </div>
         <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
           <a href="#" class="destaque">
@@ -181,6 +244,28 @@
               sit voluptatem accusantium
             </p>
           </a>
+          <!-- Opção de compra -->
+          <div class="quantity">
+            <p>Quantidade:</p>
+            <div class="quantityInput">
+              <button type="button" class="lessButton" disabled>
+                <i class="icon-less"></i>
+              </button>
+              <div class="number">1</div>
+              <button type="button" class="moreButton">
+                <i class="icon-more"></i>
+              </button>
+            </div>
+          </div>
+          <div class="valor">
+            <p>Valor:</p>
+            <p>R$ 100,00</p>
+          </div> 
+          <div class="containerButton"><button type="button"
+              class="primaryButtonLarge button btn btn-primary button-primary d-md-inline-block d-block mb-md-0 mb-2 mr-md-2">Adicionar
+              no carrinho</button>
+          </div>
+          <!-- Fim opção compra -->
         </div>
         <div class="col-lg-3 col-md-6 mb-lg-0 mb-4 mt-4">
           <a href="#" class="destaque">
@@ -195,6 +280,28 @@
               sit voluptatem accusantium
             </p>
           </a>
+          <!-- Opção de compra -->
+          <div class="quantity">
+            <p>Quantidade:</p>
+            <div class="quantityInput">
+              <button type="button" class="lessButton" disabled>
+                <i class="icon-less"></i>
+              </button>
+              <div class="number">1</div>
+              <button type="button" class="moreButton">
+                <i class="icon-more"></i>
+              </button>
+            </div>
+          </div>
+          <div class="valor">
+            <p>Valor:</p>
+            <p>R$ 100,00</p>
+          </div> 
+          <div class="containerButton"><button type="button"
+              class="primaryButtonLarge button btn btn-primary button-primary d-md-inline-block d-block mb-md-0 mb-2 mr-md-2">Adicionar
+              no carrinho</button>
+          </div>
+          <!-- Fim opção compra -->
         </div>
         <div class="col-lg-3 col-md-6 mb-lg-0 mb-4 mt-4">
           <a href="#" class="destaque">
@@ -209,6 +316,28 @@
               sit voluptatem accusantium
             </p>
           </a>
+          <!-- Opção de compra -->
+          <div class="quantity">
+            <p>Quantidade:</p>
+            <div class="quantityInput">
+              <button type="button" class="lessButton" id="less" disabled>
+                <i class="icon-less"></i>
+              </button>
+              <div class="number" id="number">1</div>
+              <button type="button" class="moreButton" id="more"  onclick="showNumber()">
+                <i class="icon-more"></i>
+              </button>
+            </div>
+          </div>
+          <div class="valor">
+            <p>Valor:</p>
+            <p>R$ 100,00</p>
+          </div> 
+          <div class="containerButton"><button type="button"
+              class="primaryButtonLarge button btn btn-primary button-primary d-md-inline-block d-block mb-md-0 mb-2 mr-md-2">Adicionar
+              no carrinho</button>
+          </div>
+          <!-- Fim opção compra -->
         </div>
         <div class="col-lg-3 col-md-6 mb-lg-0 mb-4 mt-4">
           <a href="#" class="destaque">
@@ -223,6 +352,28 @@
               sit voluptatem accusantium
             </p>
           </a>
+          <!-- Opção de compra -->
+          <div class="quantity">
+            <p>Quantidade:</p>
+            <div class="quantityInput">
+              <button type="button" class="lessButton" disabled>
+                <i class="icon-less"></i>
+              </button>
+              <div class="number">1</div>
+              <button type="button" class="moreButton">
+                <i class="icon-more"></i>
+              </button>
+            </div>
+          </div>
+          <div class="valor">
+            <p>Valor:</p>
+            <p>R$ 100,00</p>
+          </div> 
+          <div class="containerButton"><button type="button"
+              class="primaryButtonLarge button btn btn-primary button-primary d-md-inline-block d-block mb-md-0 mb-2 mr-md-2">Adicionar
+              no carrinho</button>
+          </div>
+          <!-- Fim opção compra -->
         </div>
         <div class="col-lg-3 col-md-6 mb-lg-0 mb-4 mt-4">
           <a href="#" class="destaque">
@@ -237,6 +388,28 @@
               sit voluptatem accusantium
             </p>
           </a>
+          <!-- Opção de compra -->
+          <div class="quantity">
+            <p>Quantidade:</p>
+            <div class="quantityInput">
+              <button type="button" class="lessButton" disabled>
+                <i class="icon-less"></i>
+              </button>
+              <div class="number">1</div>
+              <button type="button" class="moreButton">
+                <i class="icon-more"></i>
+              </button>
+            </div>
+          </div>
+          <div class="valor">
+            <p>Valor:</p>
+            <p id="qtd">R$ 200,00</p>
+          </div> 
+          <div class="containerButton"><button type="button"
+              class="primaryButtonLarge button btn btn-primary button-primary d-md-inline-block d-block mb-md-0 mb-2 mr-md-2">Adicionar
+              no carrinho</button>
+          </div>
+          <!-- Fim opção compra -->
         </div>
       </div>
     </div>
@@ -300,7 +473,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-6 align-self-center">
+        <div class="col-lg-6 col-xl-6 col-md-6 align-self-center">
           <div class="cliente-texto ml-5">
             <div class="imagem">
               <img src="assets/clientes-img.svg" />
